@@ -1670,11 +1670,15 @@ input, select, textarea { font-family: var(--font-body); font-size: 15px; }
   .hero-buttons { flex-direction: row; gap: 12px; }
   .hero-buttons a, .hero-buttons .btn-primary { font-size: 14px; padding: 12px 20px; }
 
-  /* Trust — 2 col compact */
-  .trust-section { padding: 48px 0; }
-  .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .trust-grid .trust-item:last-child { grid-column: 1 / -1; }
-  .trust-item { padding: 14px 12px; }
+  /* Trust — 2x3 compact grid */
+  .trust-section { padding: 32px 0; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .trust-grid .trust-item:last-child { grid-column: auto; }
+  .trust-item { padding: 10px 8px; }
+  .trust-icon { width: 36px; height: 36px; margin-bottom: 6px; }
+  .trust-icon svg { width: 18px; height: 18px; }
+  .trust-title { font-size: 13px; }
+  .trust-desc { font-size: 11px; }
 
   /* Services — horizontal scroll cards instead of vertical stack */
   .services-section { padding: 56px 0; }
@@ -1789,7 +1793,7 @@ input, select, textarea { font-family: var(--font-body); font-size: 15px; }
 
 @media (max-width: 480px) {
   .footer-grid { grid-template-columns: 1fr; }
-  .trust-grid { grid-template-columns: 1fr; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
   .hero-section { padding: 80px 0 36px; }
