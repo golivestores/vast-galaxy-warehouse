@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vast Galaxy | 美国海外仓 - 洛杉矶 Chino, CA</title>
+  <meta name="description" content="Vast Galaxy 美国海外仓，位于洛杉矶 Chino, CA。日处理7,000-10,000单，支持TEMU、TikTok Shop、SHEIN、Amazon、eBay一件代发，丢货包赔。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- ===== 1. ANNOUNCE BAR ===== -->
+<div class="v2-announce" id="announceBar">
+  <div class="v2-announce-inner">
+    <span class="v2-announce-item is-active">&#x1f6e1;&#xfe0f; 丢货包赔 — 每单全额赔付保障</span>
+    <span class="v2-announce-item">&#x26a1; 日处理 7,000–10,000 单 — 洛杉矶 Chino 仓</span>
+    <span class="v2-announce-item">&#x1f3a5; 支持 TikTok 直播发货 — 24小时内上网</span>
+  </div>
+</div>
+
+<!-- ===== 2. NAVIGATION ===== -->
+<nav class="v2-nav" id="mainNav">
+  <div class="v2-container">
+    <div class="v2-nav-inner">
+      <a href="#" class="v2-nav-brand">
+        <img src="../public/vast logo.png" alt="Vast Galaxy LLC" class="v2-nav-logo">
+      </a>
+      <div class="v2-nav-links">
+        <a href="#services">核心服务</a>
+        <a href="#whyus">为什么选我们</a>
+        <a href="#platforms">平台覆盖</a>
+        <a href="#tiktok">TikTok 直播</a>
+        <a href="#contact">联系我们</a>
+      </div>
+      <div class="v2-nav-right">
+        <a href="#contact" class="v2-btn-glow">免费询价</a>
+        <button class="v2-hamburger" id="mobileToggle" aria-label="菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="v2-mobile-menu" id="mobileMenu">
+  <button class="v2-mobile-close" id="mobileClose">&times;</button>
+  <a href="#services">核心服务</a>
+  <a href="#whyus">为什么选我们</a>
+  <a href="#platforms">平台覆盖</a>
+  <a href="#tiktok">TikTok 直播</a>
+  <a href="#contact">联系我们</a>
+  <a href="#contact" class="v2-btn-glow" style="margin-top:24px;text-align:center">免费询价</a>
+</div>
+
+<!-- ===== 3. HERO ===== -->
+<section class="v2-hero" id="hero">
+  <div class="v2-hero-bg">
+    <video autoplay muted loop playsinline>
+      <source src="../public/hero video.mp4" type="video/mp4">
+    </video>
+    <div class="v2-hero-overlay"></div>
+  </div>
+  <canvas class="v2-hero-particles" id="heroParticles"></canvas>
+  <div class="v2-container v2-hero-body">
+    <div class="v2-hero-content">
+      <div class="v2-hero-badge" data-anim="fade-up" data-delay="0">
+        <span class="v2-pulse-dot"></span>
+        洛杉矶 Chino &middot; 20,000 平方英尺自营仓
+      </div>
+      <h1 class="v2-hero-title" data-anim="fade-up" data-delay="1">
+        <span class="v2-line-static">您最可靠的</span>
+        <span class="v2-line"><span class="v2-hero-typewriter" id="heroTypewriter"></span></span>
+      </h1>
+      <p class="v2-hero-sub" data-anim="fade-up" data-delay="3">从入仓到当日发货 — 日均处理 7,000–10,000 单，服务 TEMU、TikTok Shop、SHEIN 及 Amazon 跨境卖家。</p>
+      <div class="v2-hero-tags" data-anim="fade-up" data-delay="4">
+        <span>丢货包赔</span>
+        <span>24小时上网</span>
+        <span>TikTok 直播支持</span>
+      </div>
+      <div class="v2-hero-actions" data-anim="fade-up" data-delay="5">
+        <a href="#contact" class="v2-btn-primary">免费获取报价 <span>&rarr;</span></a>
+        <button class="v2-btn-outline" onclick="document.getElementById('formModal').classList.add('is-open')">在线咨询</button>
+      </div>
+    </div>
+  </div>
+  <div class="v2-hero-scroll-hint">
+    <span>SCROLL</span>
+    <div class="v2-scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ===== 4. TRUST BADGES (auto-scroll strip) ===== -->
+<section class="v2-trust">
+  <div class="v2-trust-track">
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><strong>丢货包赔</strong><span>全额赔付，绝不扯皮</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div><strong>24小时视频监控</strong><span>仓库全方位实时监控</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><strong>24小时上网</strong><span>订单24小时内上传物流信息</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><strong>7家快递每日取件</strong><span>USPS、UPS、FedEx 等</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div><strong>专业 WMS 系统</strong><span>实时库存管理</span></div>
+    <!-- duplicate for seamless loop -->
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><strong>丢货包赔</strong><span>全额赔付，绝不扯皮</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div><strong>24小时视频监控</strong><span>仓库全方位实时监控</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><strong>24小时上网</strong><span>订单24小时内上传物流信息</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><strong>7家快递每日取件</strong><span>USPS、UPS、FedEx 等</span></div>
+    <div class="v2-trust-card"><div class="v2-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div><strong>专业 WMS 系统</strong><span>实时库存管理</span></div>
+  </div>
+</section>
+
+<!-- ===== 5. SERVICES — Expanding Panels ===== -->
+<section class="v2-services" id="services">
+  <div class="v2-container">
+    <div class="v2-section-head" data-anim="reveal">
+      <span class="v2-tag">核心服务</span>
+      <h2>跨境电商一站式<br>仓储物流解决方案</h2>
+    </div>
+  </div>
+  <div class="v2-panels">
+    <div class="v2-panel" style="--panel-img:url('../public/Same-Day Dropshipping.jpg')">
+      <span class="v2-panel-num">01</span>
+      <div class="v2-panel-body">
+        <span class="v2-panel-badge">主营业务</span>
+        <h3>一件代发</h3>
+        <p>通过 WMS 系统自动同步订单，24小时内打包发货。服务 TEMU、TikTok Shop、SHEIN、Amazon 及 eBay 平台卖家。</p>
+      </div>
+    </div>
+    <div class="v2-panel" style="--panel-img:url('../public/Returns-&-After-Sales.jpg')">
+      <span class="v2-panel-num">02</span>
+      <div class="v2-panel-body">
+        <h3>售后退货处理</h3>
+        <p>日均处理约100单退货。质检、换标、重新上架一条龙服务，全流程闭环管理。</p>
+      </div>
+    </div>
+    <div class="v2-panel" style="--panel-img:url('../public/Secure-US-Warehousing.jpg')">
+      <span class="v2-panel-num">03</span>
+      <div class="v2-panel-body">
+        <h3>安全仓储</h3>
+        <p>位于加州 Chino，20,000 平方英尺自营仓库。独立集装箱停车区，24小时监控。</p>
+      </div>
+    </div>
+    <div class="v2-panel" style="--panel-img:url('../public/FBA-Transfer-&-Relabeling.jpg')">
+      <span class="v2-panel-num">04</span>
+      <div class="v2-panel-body">
+        <h3>FBA 中转 &amp; 换标</h3>
+        <p>一对一换标、产品质检、FBA 转运，以及 TikTok 直播发货支持。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5B. INDUSTRY SOLUTIONS — Tabs ===== -->
+<section class="v2-industry" id="industries">
+  <div class="v2-container">
+    <div class="v2-section-head" data-anim="reveal">
+      <span class="v2-tag">行业解决方案</span>
+      <h2>深耕行业，定制仓储方案</h2>
+      <p class="v2-section-sub">针对不同品类的仓储需求，提供从入库质检、专区存储、定制包装到尾程配送的全链路解决方案</p>
+    </div>
+    <div class="v2-ind-tabs" data-anim="reveal">
+      <button class="v2-ind-tab is-active" data-tab="0">快消品行业</button>
+      <button class="v2-ind-tab" data-tab="1">3C电子行业</button>
+      <button class="v2-ind-tab" data-tab="2">服装行业</button>
+      <button class="v2-ind-tab" data-tab="3">家电家具行业</button>
+      <button class="v2-ind-tab" data-tab="4">食品行业</button>
+    </div>
+    <div class="v2-ind-panels">
+      <div class="v2-ind-panel is-active" data-panel="0">
+        <div class="v2-ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+        <h3>快消品行业</h3>
+        <p>高周转SKU管理，支持批次管理和效期预警。多渠道同步发货，保障快消品新鲜度与时效性。</p>
+      </div>
+      <div class="v2-ind-panel" data-panel="1">
+        <div class="v2-ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3>3C电子行业</h3>
+        <p>一物一码精细管理，防静电专区存储。支持序列号追踪、售后换货和定制贴标服务。</p>
+      </div>
+      <div class="v2-ind-panel" data-panel="2">
+        <div class="v2-ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2 12 3.46 8 2 3.62 3.46a2 2 0 00-1.34 1.89v13.3a2 2 0 001.34 1.89L8 22l4-1.46L16 22l4.38-1.46a2 2 0 001.34-1.89V5.35a2 2 0 00-1.34-1.89z"/><line x1="8" y1="2" x2="8" y2="22"/><line x1="16" y1="2" x2="16" y2="22"/></svg></div>
+        <h3>服装行业</h3>
+        <p>挂装/叠装专区存储，支持换标、质检、吊牌更换。服装退货翻新处理，降低售后成本。</p>
+      </div>
+      <div class="v2-ind-panel" data-panel="3">
+        <div class="v2-ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+        <h3>家电家具行业</h3>
+        <p>大件商品入库、组装检测和卡车尾程配送。高层货架仓储，支持预约送货上门服务。</p>
+      </div>
+      <div class="v2-ind-panel" data-panel="4">
+        <div class="v2-ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+        <h3>食品行业</h3>
+        <p>FDA合规仓储，温控存储区域，严格效期管理。支持食品标签合规审查和多渠道分销。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. WHY US ===== -->
+<section class="v2-whyus" id="whyus">
+  <div class="v2-container">
+    <div class="v2-whyus-grid">
+      <div class="v2-whyus-visual" data-anim="reveal">
+        <img src="../public/wecom-temp-267680-63fabe1d3410295e2230000571354356.jpg" alt="Vast Galaxy 仓库内部实拍">
+        <span class="v2-whyus-badge">Chino, CA</span>
+      </div>
+      <div class="v2-whyus-content">
+        <div class="v2-section-head v2-section-head--left" data-anim="reveal">
+          <span class="v2-tag">核心优势</span>
+          <h2>为什么卖家选择<br>Vast Galaxy</h2>
+        </div>
+        <div class="v2-whyus-list">
+          <div class="v2-whyus-item" data-anim="slide-right">
+            <div class="v2-whyus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><strong>洛杉矶核心地段</strong><p>位于加州 Chino — 大洛杉矶物流核心区。美西尾程配送更快一步。</p></div>
+          </div>
+          <div class="v2-whyus-item" data-anim="slide-right">
+            <div class="v2-whyus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <div><strong>自营仓库</strong><p>20,000 平方英尺自有仓库，无第三方转手，全程品控。</p></div>
+          </div>
+          <div class="v2-whyus-item" data-anim="slide-right">
+            <div class="v2-whyus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <div><strong>大规模处理能力</strong><p>日均处理 7,000–10,000 单，成熟的基础设施助您业务扩张。</p></div>
+          </div>
+          <div class="v2-whyus-item" data-anim="slide-right">
+            <div class="v2-whyus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div><strong>丢货包赔</strong><p>包裹丢失全额赔付 — 不扯皮、不拖延、不推诿。</p></div>
+          </div>
+          <div class="v2-whyus-item" data-anim="slide-right">
+            <div class="v2-whyus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+            <div><strong>TikTok 直播支持</strong><p>专为 TikTok Shop 直播达人打造，库存预置、即播即发。</p></div>
+          </div>
+          <div class="v2-whyus-item" data-anim="slide-right">
+            <div class="v2-whyus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <div><strong>中英双语客服</strong><p>一对一专属客户经理，支持微信沟通，高效响应。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. PLATFORM & CARRIER COVERAGE ===== -->
+<section class="v2-platforms" id="platforms">
+  <div class="v2-container">
+    <div class="v2-section-head" data-anim="reveal">
+      <span class="v2-tag">平台覆盖</span>
+      <h2>服务各大跨境电商平台</h2>
+    </div>
+  </div>
+  <div class="v2-marquee-wrap">
+    <div class="v2-marquee v2-marquee--platforms">
+      <div class="v2-logo-card"><img src="../public/amazon.png" alt="Amazon"></div>
+      <div class="v2-logo-card"><img src="../public/ebay.png" alt="eBay"></div>
+      <div class="v2-logo-card"><img src="../public/tk-shop-logo.png" alt="TikTok Shop"></div>
+      <div class="v2-logo-card"><img src="../public/walmart.png" alt="Walmart"></div>
+      <div class="v2-logo-card"><img src="../public/shopify.png" alt="Shopify"></div>
+      <div class="v2-logo-card"><img src="../public/etsy.png" alt="Etsy"></div>
+      <div class="v2-logo-card"><img src="../public/homedepot.png" alt="Home Depot"></div>
+      <div class="v2-logo-card"><img src="../public/wayfir.png" alt="Wayfair"></div>
+      <div class="v2-logo-card v2-logo-text" style="--brand:#FF6900">TEMU</div>
+      <div class="v2-logo-card v2-logo-text" style="--brand:#222">SHEIN</div>
+      <!-- dup 1 -->
+      <div class="v2-logo-card"><img src="../public/amazon.png" alt="Amazon"></div>
+      <div class="v2-logo-card"><img src="../public/ebay.png" alt="eBay"></div>
+      <div class="v2-logo-card"><img src="../public/tk-shop-logo.png" alt="TikTok Shop"></div>
+      <div class="v2-logo-card"><img src="../public/walmart.png" alt="Walmart"></div>
+      <div class="v2-logo-card"><img src="../public/shopify.png" alt="Shopify"></div>
+      <div class="v2-logo-card"><img src="../public/etsy.png" alt="Etsy"></div>
+      <div class="v2-logo-card"><img src="../public/homedepot.png" alt="Home Depot"></div>
+      <div class="v2-logo-card"><img src="../public/wayfir.png" alt="Wayfair"></div>
+      <div class="v2-logo-card v2-logo-text" style="--brand:#FF6900">TEMU</div>
+      <div class="v2-logo-card v2-logo-text" style="--brand:#222">SHEIN</div>
+      <!-- dup 2 -->
+      <div class="v2-logo-card"><img src="../public/amazon.png" alt="Amazon"></div>
+      <div class="v2-logo-card"><img src="../public/ebay.png" alt="eBay"></div>
+      <div class="v2-logo-card"><img src="../public/tk-shop-logo.png" alt="TikTok Shop"></div>
+      <div class="v2-logo-card"><img src="../public/walmart.png" alt="Walmart"></div>
+      <div class="v2-logo-card"><img src="../public/shopify.png" alt="Shopify"></div>
+      <div class="v2-logo-card"><img src="../public/etsy.png" alt="Etsy"></div>
+      <div class="v2-logo-card"><img src="../public/homedepot.png" alt="Home Depot"></div>
+      <div class="v2-logo-card"><img src="../public/wayfir.png" alt="Wayfair"></div>
+      <div class="v2-logo-card v2-logo-text" style="--brand:#FF6900">TEMU</div>
+      <div class="v2-logo-card v2-logo-text" style="--brand:#222">SHEIN</div>
+    </div>
+  </div>
+  <div class="v2-container">
+    <div class="v2-section-head v2-section-head--sm" data-anim="reveal">
+      <span class="v2-tag">物流合作</span>
+      <h2>7 家快递每天上门取货</h2>
+      <p class="v2-section-sub">USPS、UPS、UNIUNI、FedEx、GOFO、燕文、SWIFTX 每日准时上门取件</p>
+    </div>
+  </div>
+  <div class="v2-marquee-wrap">
+    <div class="v2-marquee v2-marquee--carriers">
+      <div class="v2-logo-card"><img src="../public/usps.png" alt="USPS"></div>
+      <div class="v2-logo-card"><img src="../public/ups.png" alt="UPS"></div>
+      <div class="v2-logo-card"><img src="../public/uniuni.png" alt="UNIUNI"></div>
+      <div class="v2-logo-card"><img src="../public/fedex.png" alt="FedEx"></div>
+      <div class="v2-logo-card"><img src="../public/gofo.png" alt="GOFO"></div>
+      <div class="v2-logo-card"><img src="../public/yanwen.png" alt="燕文"></div>
+      <div class="v2-logo-card"><img src="../public/swyft.png" alt="SWIFTX"></div>
+      <!-- dup 1 -->
+      <div class="v2-logo-card"><img src="../public/usps.png" alt="USPS"></div>
+      <div class="v2-logo-card"><img src="../public/ups.png" alt="UPS"></div>
+      <div class="v2-logo-card"><img src="../public/uniuni.png" alt="UNIUNI"></div>
+      <div class="v2-logo-card"><img src="../public/fedex.png" alt="FedEx"></div>
+      <div class="v2-logo-card"><img src="../public/gofo.png" alt="GOFO"></div>
+      <div class="v2-logo-card"><img src="../public/yanwen.png" alt="燕文"></div>
+      <div class="v2-logo-card"><img src="../public/swyft.png" alt="SWIFTX"></div>
+      <!-- dup 2 -->
+      <div class="v2-logo-card"><img src="../public/usps.png" alt="USPS"></div>
+      <div class="v2-logo-card"><img src="../public/ups.png" alt="UPS"></div>
+      <div class="v2-logo-card"><img src="../public/uniuni.png" alt="UNIUNI"></div>
+      <div class="v2-logo-card"><img src="../public/fedex.png" alt="FedEx"></div>
+      <div class="v2-logo-card"><img src="../public/gofo.png" alt="GOFO"></div>
+      <div class="v2-logo-card"><img src="../public/yanwen.png" alt="燕文"></div>
+      <div class="v2-logo-card"><img src="../public/swyft.png" alt="SWIFTX"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. STATS / NUMBERS ===== -->
+<section class="v2-stats" id="stats">
+  <div class="v2-stats-bg">
+    <video autoplay muted loop playsinline>
+      <source src="../public/vehicles-near-modern-warehouse-buildings-2026-01-21-02-19-59-utc.mp4" type="video/mp4">
+    </video>
+    <div class="v2-stats-overlay"></div>
+  </div>
+  <div class="v2-container">
+    <div class="v2-stats-inner" data-anim="reveal">
+      <span class="v2-tag v2-tag--light">实力数据</span>
+      <h2 class="v2-stats-title">用数据说话<em>用实力证明</em></h2>
+      <div class="v2-stats-grid" id="statsGrid">
+        <div class="v2-stat">
+          <div class="v2-stat-num" data-target="7000" data-format="comma">0</div>
+          <div class="v2-stat-unit">单/天</div>
+          <div class="v2-stat-label">日均发货能力</div>
+        </div>
+        <div class="v2-stat">
+          <div class="v2-stat-num" data-target="20000" data-format="comma">0</div>
+          <div class="v2-stat-unit">平方英尺</div>
+          <div class="v2-stat-label">Chino 仓库面积</div>
+        </div>
+        <div class="v2-stat">
+          <div class="v2-stat-num" data-target="7">0</div>
+          <div class="v2-stat-unit">家快递</div>
+          <div class="v2-stat-label">每日上门取件</div>
+        </div>
+        <div class="v2-stat">
+          <div class="v2-stat-num" data-target="100">0</div>
+          <div class="v2-stat-unit">%</div>
+          <div class="v2-stat-label">丢货全额赔付</div>
+        </div>
+        <div class="v2-stat">
+          <div class="v2-stat-num" data-target="48">0</div>
+          <div class="v2-stat-unit">小时</div>
+          <div class="v2-stat-label">入库后极速上架</div>
+        </div>
+        <div class="v2-stat">
+          <div class="v2-stat-num" data-target="500" data-format="comma">0</div>
+          <div class="v2-stat-unit">+</div>
+          <div class="v2-stat-label">活跃合作卖家</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. TIKTOK LIVE FEATURE ===== -->
+<section class="v2-tiktok" id="tiktok">
+  <div class="v2-container">
+    <div class="v2-tiktok-grid">
+      <div class="v2-tiktok-visual" data-anim="reveal">
+        <img src="../public/tiktok-live.jpg" alt="TikTok 直播电商仓储服务">
+        <div class="v2-tiktok-float v2-tiktok-float--1">
+          <span class="v2-pulse-dot v2-pulse-dot--red"></span> LIVE
+        </div>
+        <div class="v2-tiktok-float v2-tiktok-float--2">📦 订单 #4821 已发货</div>
+        <div class="v2-tiktok-float v2-tiktok-float--3">📦 订单 #4822 已打包</div>
+      </div>
+      <div class="v2-tiktok-content" data-anim="reveal">
+        <span class="v2-tag-pill">特色服务</span>
+        <h2>专为 TikTok Shop<br>直播电商打造</h2>
+        <p>经营 TikTok Shop？我们提前预置您的库存，直播开播即可即时发货。观众下单后当天发出，确保您的店铺履约评分和发货时效完美达标。</p>
+        <div class="v2-check-list">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>开播前库存提前预置到位</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>下单后数小时内即发货</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>完美适配 TikTok Shop 半托管模式</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>支持 GOFO、SWIFTX、UNIUNI 渠道</div>
+        </div>
+        <a href="#contact" class="v2-btn-primary">咨询 TikTok 专属方案 <span>&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. TESTIMONIALS — Carousel ===== -->
+<section class="v2-testimonials" id="testimonials">
+  <div class="v2-container">
+    <div class="v2-section-head" data-anim="reveal">
+      <span class="v2-tag">客户评价</span>
+      <h2>听听卖家怎么说</h2>
+    </div>
+    <div class="v2-testi-carousel" data-anim="reveal">
+      <div class="v2-testi-track" id="testiTrack">
+        <div class="v2-testi-card">
+          <div class="v2-testi-stars">★★★★★</div>
+          <p>"之前的仓库老丢包裹，换到 Vast Galaxy 后彻底解决了。他们的丢货包赔是真的兑现的，立刻就赔了。现在每天发 800 单，零问题。"</p>
+          <div class="v2-testi-author">
+            <div class="v2-testi-avatar">陈</div>
+            <div><strong>陈先生</strong><span>TikTok Shop 卖家 · 广东</span></div>
+          </div>
+          <div class="v2-testi-tags"><span>TikTok Shop</span><span>800单/天</span></div>
+        </div>
+        <div class="v2-testi-card">
+          <div class="v2-testi-stars">★★★★★</div>
+          <p>"WMS 系统对接非常顺畅，TEMU 订单自动同步，24小时上网的承诺一直在兑现。客服微信回复超快，沟通毫无障碍。"</p>
+          <div class="v2-testi-author">
+            <div class="v2-testi-avatar">李</div>
+            <div><strong>李女士</strong><span>TEMU 卖家 · 深圳</span></div>
+          </div>
+          <div class="v2-testi-tags"><span>TEMU</span><span>半托管</span></div>
+        </div>
+        <div class="v2-testi-card">
+          <div class="v2-testi-stars">★★★★★</div>
+          <p>"我们同时用 Vast Galaxy 做日常代发和 TikTok 直播发货。洛杉矶的位置太方便了，美西配送时间从 5 天降到了 2 天。"</p>
+          <div class="v2-testi-author">
+            <div class="v2-testi-avatar">张</div>
+            <div><strong>张先生</strong><span>Amazon + TikTok 卖家 · 杭州</span></div>
+          </div>
+          <div class="v2-testi-tags"><span>Amazon</span><span>TikTok 直播</span></div>
+        </div>
+      </div>
+      <div class="v2-testi-dots" id="testiDots">
+        <button class="is-active" data-index="0"></button>
+        <button data-index="1"></button>
+        <button data-index="2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 11. CONTACT / CTA ===== -->
+<section class="v2-contact" id="contact">
+  <div class="v2-container">
+    <div class="v2-section-head" data-anim="reveal">
+      <span class="v2-tag v2-tag--light">联系我们</span>
+      <h2 class="v2-contact-title">准备好拓展您的<br>美国业务了吗？</h2>
+      <p class="v2-section-sub v2-section-sub--light">免费获取专属方案，大部分询盘 2 小时内回复。</p>
+    </div>
+    <div class="v2-contact-grid">
+      <div class="v2-contact-info" data-anim="reveal">
+        <h3>联系方式</h3>
+        <div class="v2-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div><label>地址</label><span>Vast Galaxy Warehouse<br>Chino, CA（大洛杉矶地区）</span></div></div>
+        <div class="v2-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg><div><label>服务项目</label><span>一件代发 &middot; 退货处理 &middot; 仓储<br>FBA 中转 &middot; TikTok 直播</span></div></div>
+        <div class="v2-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><label>邮箱</label><span>info@vastgalaxy.com</span></div></div>
+        <div class="v2-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><div><label>微信</label><span>扫码添加客服微信</span></div></div>
+        <div class="v2-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><label>工作时间</label><span>周一至周六 9AM–6PM（美西时间）<br>订单 7&times;24 小时处理</span></div></div>
+      </div>
+      <div class="v2-contact-form" data-anim="reveal">
+        <h3>发送询盘</h3>
+        <form id="contactForm">
+          <div class="v2-form-row">
+            <div class="v2-form-group"><label>姓名 *</label><input type="text" name="name" required placeholder="您的姓名"></div>
+            <div class="v2-form-group"><label>公司/店铺 *</label><input type="text" name="company" required placeholder="公司或店铺名称"></div>
+          </div>
+          <div class="v2-form-group"><label>邮箱 *</label><input type="email" name="email" required placeholder="you@example.com"></div>
+          <div class="v2-form-row">
+            <div class="v2-form-group"><label>平台</label><select name="platform"><option value="">选择平台</option><option>TEMU</option><option>TikTok Shop</option><option>SHEIN</option><option>Amazon</option><option>eBay</option><option>其他</option></select></div>
+            <div class="v2-form-group"><label>日均单量</label><select name="volume"><option value="">选择单量</option><option>100 单以下</option><option>100 - 500 单</option><option>500 - 2,000 单</option><option>2,000 单以上</option><option>5,000 单以上</option></select></div>
+          </div>
+          <div class="v2-form-group"><label>留言</label><textarea name="message" rows="4" placeholder="请描述您的需求..."></textarea></div>
+          <button type="submit" class="v2-btn-primary v2-btn-primary--full">提交询盘 <span>&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<div class="v2-cta-banner">
+  <div class="v2-container">
+    <span>立即开启与 Vast Galaxy 的合作</span>
+    <a href="#contact" class="v2-btn-glow">开始合作 &rarr;</a>
+  </div>
+</div>
+
+<!-- ===== 12. FOOTER ===== -->
+<footer class="v2-footer">
+  <canvas class="v2-footer-stars" id="footerStars"></canvas>
+  <div class="v2-container">
+    <div class="v2-footer-grid">
+      <div>
+        <img src="../public/vast logo.png" alt="Vast Galaxy LLC" class="v2-footer-logo">
+        <p class="v2-footer-desc">您值得信赖的美国海外仓合作伙伴。从加州 Chino 仓库服务全球跨境电商卖家。</p>
+        <div class="v2-footer-social">
+          <a href="#" aria-label="微信"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>服务项目</h4>
+        <a href="#services">一件代发</a><a href="#services">退货处理</a><a href="#services">仓储服务</a><a href="#services">FBA 中转</a><a href="#tiktok">TikTok 直播支持</a><a href="#services">产品质检</a>
+      </div>
+      <div>
+        <h4>服务平台</h4>
+        <a href="#platforms">TEMU 代发</a><a href="#platforms">TikTok Shop 代发</a><a href="#platforms">SHEIN 代发</a><a href="#platforms">Amazon FBA 中转</a><a href="#platforms">eBay 代发</a>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <div class="v2-footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chino, CA, USA</span></div>
+        <div class="v2-footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>info@vastgalaxy.com</span></div>
+        <div class="v2-footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>周一至周六 9AM–6PM PST</span></div>
+      </div>
+    </div>
+    <div class="v2-footer-bottom">
+      <span>&copy; 2025 Vast Galaxy Warehouse. All rights reserved.</span>
+      <a href="#">隐私政策</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FORM MODAL ===== -->
+<div class="v2-modal-overlay" id="formModal">
+  <div class="v2-modal">
+    <button class="v2-modal-close" onclick="this.closest('.v2-modal-overlay').classList.remove('is-open')">&times;</button>
+    <h3>开启您的海外仓之旅</h3>
+    <p>免费咨询 · 无需承诺</p>
+    <form id="heroForm">
+      <div class="v2-form-row">
+        <div class="v2-form-group"><label>姓名 *</label><input type="text" name="name" required placeholder="您的姓名"></div>
+        <div class="v2-form-group"><label>公司/店铺 *</label><input type="text" name="company" required placeholder="公司或店铺名称"></div>
+      </div>
+      <div class="v2-form-row">
+        <div class="v2-form-group"><label>邮箱 *</label><input type="email" name="email" required placeholder="you@example.com"></div>
+        <div class="v2-form-group"><label>微信 / 电话</label><input type="text" name="wechat" placeholder="微信号或手机号"></div>
+      </div>
+      <div class="v2-form-row">
+        <div class="v2-form-group"><label>平台</label><select name="platform"><option value="">选择平台</option><option>TEMU</option><option>TikTok Shop</option><option>SHEIN</option><option>Amazon</option><option>eBay</option><option>其他</option></select></div>
+        <div class="v2-form-group"><label>日均单量</label><select name="volume"><option value="">选择单量</option><option>100 单以下</option><option>100 - 500 单</option><option>500 - 2,000 单</option><option>2,000 单以上</option><option>5,000 单以上</option></select></div>
+      </div>
+      <div class="v2-form-group"><label>留言（可选）</label><textarea name="message" rows="3" placeholder="请描述您的需求..."></textarea></div>
+      <button type="submit" class="v2-btn-primary v2-btn-primary--full">提交询盘 <span>&rarr;</span></button>
+    </form>
+  </div>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
